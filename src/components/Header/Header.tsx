@@ -4,6 +4,8 @@ import { semiDarkBlue, pureWhite } from "../../../styles/Theme/Theme";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { tablet, desktop } from "../../../styles/BreakPoints";
+import Avatar from "../../assets/image-avatar.png";
+import Image from "next/image";
 
 type Props = {
   pathname: string;
@@ -35,7 +37,7 @@ export default function Header() {
           />
         </Link>
       </nav>
-      <img src={avatar.src}></img>
+      <Image alt="Avatar" src={Avatar} placeholder="blur" quality={100} />
     </HeaderContainer>
   );
 }

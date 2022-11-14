@@ -9,18 +9,20 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body {
-        background-color: ${darkBlue};
+    font-family: "Outfit", sans-serif;
+    
+    background-color: ${darkBlue};
 
-        @media (min-width: 1200px) {
+    @media (min-width: 1200px) {
     ::-webkit-scrollbar-track {
-    background-color:  ${darkBlue};
+        background-color:  ${darkBlue};
     }
     ::-webkit-scrollbar {
-        width: 6px;
+        width: 10px;
         background: #F4F4F4;
     }
     ::-webkit-scrollbar-thumb {
-        background:  ${red}};
+        background:  #F4F4F4};
     }
     }
 

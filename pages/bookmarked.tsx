@@ -4,14 +4,7 @@ import SearchBar from "../src/components/SearchBar/SearchBar";
 import { tablet, desktop } from "../styles/BreakPoints";
 
 export default function Bookmarked() {
-  return (
-    <BookmarkedPage>
-      <Header></Header>
-      <div>
-        <SearchBar />
-      </div>
-    </BookmarkedPage>
-  );
+  return <></>;
 }
 
 const BookmarkedPage = styled.div`

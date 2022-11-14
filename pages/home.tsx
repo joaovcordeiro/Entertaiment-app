@@ -4,14 +4,7 @@ import SearchBar from "../src/components/SearchBar/SearchBar";
 import { tablet, desktop } from "../styles/BreakPoints";
 
 export default function Home() {
-  return (
-    <HomePage>
-      <Header />
-      <div>
-        <SearchBar />
-      </div>
-    </HomePage>
-  );
+  return <></>;
 }
 
 const HomePage = styled.div`
