@@ -20,14 +20,12 @@ export default function Trending() {
 
 const TrendingsContainer = styled.div`
   padding: 0 16px;
+  margin-top: 24px;
 
   h2 {
     color: ${pureWhite};
     font-weight: 300;
-  }
-
-  img {
-    border-radius: 10px;
+    margin-bottom: 16px;
   }
 `;
 

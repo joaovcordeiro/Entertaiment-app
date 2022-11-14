@@ -40,6 +40,10 @@ export default function TrendingMovie({ movie }: Props) {
 
 const MovieContainer = styled.div`
   position: relative;
+
+  img {
+    border-radius: 10px;
+  }
 `;
 
 const MovieInfo = styled.div`
@@ -59,8 +63,6 @@ const MovieInfo = styled.div`
     border-radius: 0;
     width: 12px;
     height: 12px;
-
-    color: #d0d2d7;
   }
 `;
 
