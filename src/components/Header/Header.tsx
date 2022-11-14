@@ -1,10 +1,9 @@
 import styled from "styled-components";
-import avatar from "../../assets/image-avatar.png";
 import { semiDarkBlue, pureWhite } from "../../../styles/Theme/Theme";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import { tablet, desktop } from "../../../styles/BreakPoints";
-import Avatar from "../../assets/image-avatar.png";
+import Avatar from "../../../public/assets/image-avatar.png";
 import Image from "next/image";
 
 type Props = {

@@ -8,8 +8,14 @@ export const GlobalStyle = createGlobalStyle`
     transition: 0.3s;
 }
 
+ h2, p{
+    margin: 0;
+ }
+
 body {
     font-family: "Outfit", sans-serif;
+
+    font-weight: 300;
     
     background-color: ${darkBlue};
 
@@ -25,6 +31,4 @@ body {
         background:  #F4F4F4};
     }
     }
-
-
 `;
