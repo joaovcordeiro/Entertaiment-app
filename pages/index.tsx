@@ -6,18 +6,20 @@ import Link from "next/link";
 import { red } from "../styles/Theme/Theme";
 import Logo from "../src/assets/logo.svg";
 import { useRouter } from "next/router";
+import { FormEvent } from "react";
 
 export default function Login() {
   const router = useRouter();
 
-  function handleSubmit() {
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
     router.push("/home");
   }
   return (
     <LoginPage>
       <img src={Logo.src}></img>
       <Modal title="Login">
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={(e) => handleSubmit(e)}>
           <Input placeholder="Email address"></Input>
           <Input placeholder="Password" error=""></Input>
           <Button>Login to your account</Button>
@@ -43,6 +45,5 @@ const LoginPage = styled.div`
 const StyledLink = styled(Link)`
   text-decoration: none;
   color: ${red};
-
   cursor: pointer;
 `;

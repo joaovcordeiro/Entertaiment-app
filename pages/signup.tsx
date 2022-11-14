@@ -6,10 +6,12 @@ import Link from "next/link";
 import { red } from "../styles/Theme/Theme";
 import Logo from "../src/assets/logo.svg";
 import { useRouter } from "next/router";
+import { FormEvent } from "react";
 
 export default function SignUp() {
   const router = useRouter();
-  function handleSubmit() {
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
     router.push("/");
   }
 
@@ -17,7 +19,7 @@ export default function SignUp() {
     <SignUpPage>
       <img src={Logo.src}></img>
       <Modal title="Sign Up">
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={(e) => handleSubmit(e)}>
           <Input placeholder="Email address"></Input>
           <Input placeholder="Password" error=""></Input>
           <Input placeholder="Repeat Password" error=""></Input>
