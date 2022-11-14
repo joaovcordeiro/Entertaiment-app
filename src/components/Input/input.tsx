@@ -29,7 +29,7 @@ export default function Input({ placeholder, error }: Props) {
 
 const InputContainer = styled.div`
   position: relative;
-  width: 279px;
+  width: 100%;
   font-weight: 300;
   span {
     position: absolute;
@@ -43,7 +43,7 @@ const StyledInput = styled.input<InputProps>`
   border: none;
   border-bottom: 1px solid ${(props) => props.border};
   background-color: ${semiDarkBlue};
-  width: 279px;
+  width: 100%;
   padding-left: 17px;
   padding-bottom: 17px;
   outline: none;

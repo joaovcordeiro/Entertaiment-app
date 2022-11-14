@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { pureWhite, semiDarkBlue } from "../../../styles/Theme/Theme";
+import { tablet, desktop } from "../../../styles/BreakPoints";
 
 type Props = {
   title: string;
@@ -18,10 +19,10 @@ export default function Modal({ title, children }: Props) {
 const ModalContainer = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 365px;
   border-radius: 20px;
   background-color: ${semiDarkBlue};
-  padding: 32px;
+  padding: 24px 24px 32px 24px;
+  width: 327px;
 
   form {
     display: flex;
@@ -45,5 +46,10 @@ const ModalContainer = styled.div`
     color: ${pureWhite};
     text-align: center;
     margin-top: 24px;
+  }
+
+  @media (min-width: ${tablet}) {
+    padding: 32px;
+    width: 400px;
   }
 `;

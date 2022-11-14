@@ -3,6 +3,7 @@ import avatar from "../../assets/image-avatar.png";
 import { semiDarkBlue, pureWhite } from "../../../styles/Theme/Theme";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { tablet, desktop } from "../../../styles/BreakPoints";
 
 type Props = {
   pathname: string;
@@ -50,16 +51,38 @@ const HeaderContainer = styled.div`
   img {
     width: 24px;
     height: 24px;
+
+    @media (min-width: ${desktop}) {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   nav {
     display: flex;
     gap: 24px;
+
+    @media (min-width: ${desktop}) {
+      flex-direction: column;
+      margin-top: -500px;
+    }
   }
 
   svg {
     cursor: pointer;
     font-size: 16px;
+  }
+
+  @media (min-width: ${tablet}) {
+    margin: 24px;
+  }
+
+  @media (min-width: ${desktop}) {
+    flex-direction: column;
+    height: 100vh;
+    padding: 32px 16px;
+    margin: 32px;
+    width: 96px;
   }
 `;
 
@@ -109,7 +132,7 @@ function BookMarkIcon({ pathname }: Props) {
 
 function Logo() {
   return (
-    <svg width="25" height="20" xmlns="http://www.w3.org/2000/svg">
+    <svg width="32" height="25.6" xmlns="http://www.w3.org/2000/svg">
       <path
         d="m26.463.408 3.2 6.4h-4.8l-3.2-6.4h-3.2l3.2 6.4h-4.8l-3.2-6.4h-3.2l3.2 6.4h-4.8l-3.2-6.4h-1.6a3.186 3.186 0 0 0-3.184 3.2l-.016 19.2a3.2 3.2 0 0 0 3.2 3.2h25.6a3.2 3.2 0 0 0 3.2-3.2V.408h-6.4Z"
         fill="#FC4747"

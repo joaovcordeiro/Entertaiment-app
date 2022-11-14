@@ -3,18 +3,18 @@ import Header from "../src/components/Header/Header";
 import SearchBar from "../src/components/SearchBar/SearchBar";
 import { tablet, desktop } from "../styles/BreakPoints";
 
-export default function Home() {
+export default function Bookmarked() {
   return (
-    <HomePage>
-      <Header />
+    <BookmarkedPage>
+      <Header></Header>
       <div>
         <SearchBar />
       </div>
-    </HomePage>
+    </BookmarkedPage>
   );
 }
 
-const HomePage = styled.div`
+const BookmarkedPage = styled.div`
   @media (min-width: ${desktop}) {
     display: flex;
   }

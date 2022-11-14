@@ -3,18 +3,18 @@ import Header from "../src/components/Header/Header";
 import SearchBar from "../src/components/SearchBar/SearchBar";
 import { tablet, desktop } from "../styles/BreakPoints";
 
-export default function Home() {
+export default function Movies() {
   return (
-    <HomePage>
-      <Header />
+    <MoviePage>
+      <Header></Header>
       <div>
         <SearchBar />
       </div>
-    </HomePage>
+    </MoviePage>
   );
 }
 
-const HomePage = styled.div`
+const MoviePage = styled.div`
   @media (min-width: ${desktop}) {
     display: flex;
   }
