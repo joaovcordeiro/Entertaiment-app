@@ -11,10 +11,11 @@ interface Props {
 }
 
 export default function TrendingMovie({ movie }: Props) {
+  console.log(`/${movie.thumbnail.regular.large.replace("./", "")}`);
   return (
     <MovieContainer>
       <Image
-        src={`/../public${movie.thumbnail.regular.large.replace("./", "/")}`}
+        src={`/${movie.thumbnail.regular.large}`}
         width={240}
         height={140}
         alt={movie.title}
