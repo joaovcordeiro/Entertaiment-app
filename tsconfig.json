@@ -20,7 +20,8 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/profile.js",
-    "pages/profile.js"
+    "pages/profile.js",
+    "pages/_document.ts"
   ],
   "exclude": ["node_modules"]
 }

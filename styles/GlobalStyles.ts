@@ -5,7 +5,6 @@ export const GlobalStyle = createGlobalStyle`
 
 * {
     box-sizing: border-box;
-    transition: 0.3s;
 }
 
  h2, p{
@@ -14,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
 
 body {
     font-family: "Outfit", sans-serif;
-
+    overflow-x: hidden;
     font-weight: 300;
     
     background-color: ${darkBlue};

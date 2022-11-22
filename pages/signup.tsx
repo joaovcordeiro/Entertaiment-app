@@ -29,7 +29,7 @@ export default function SignUp() {
         </form>
         <span>
           Already have an account? &nbsp;
-          <StyledLink href="/">Login</StyledLink>
+          <StyledLink href="/login">Login</StyledLink>
         </span>
       </Modal>
     </SignUpPage>

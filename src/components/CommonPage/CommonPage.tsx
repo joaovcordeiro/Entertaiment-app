@@ -3,31 +3,34 @@ import Header from "../Header/Header";
 import SearchBar from "../SearchBar/SearchBar";
 import { desktop } from "../../../styles/BreakPoints";
 import { useRouter } from "next/router";
-import Trending from "../Trending/Trending";
 
 type Props = {
-  pathname: string;
+  children: React.ReactNode;
 };
 
-export default function CommonPage() {
+export default function CommonPage({ children }: any) {
   const { pathname } = useRouter();
   return (
     <>
-      {(pathname === "/home" ||
-        pathname === "/movies" ||
-        pathname === "/series" ||
-        pathname === "/bookmarked") && <PageHeader pathname={pathname} />}
+      {pathname === "/home" ||
+      pathname === "/movies" ||
+      pathname === "/series" ||
+      pathname === "/bookmarked" ? (
+        <PageHeader children={children} />
+      ) : (
+        children
+      )}
     </>
   );
 }
 
-function PageHeader({ pathname }: Props) {
+function PageHeader({ children }: Props) {
   return (
     <Page>
       <Header />
       <div>
         <SearchBar />
-        {pathname === "/home" && <Trending />}
+        {children}
       </div>
     </Page>
   );

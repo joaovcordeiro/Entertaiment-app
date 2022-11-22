@@ -22,6 +22,10 @@ const SearchBarContainer = styled.div`
     cursor: pointer;
   }
 
+  @media (min-width: ${tablet}) {
+    padding-left: 24px;
+  }
+
   @media (min-width: ${desktop}) {
     margin-top: 60px;
   }

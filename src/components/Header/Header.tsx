@@ -48,6 +48,7 @@ const HeaderContainer = styled.div`
   background-color: ${semiDarkBlue};
   height: 56px;
   padding: 0 16px;
+  border-radius: 10px;
 
   img {
     width: 24px;
@@ -65,7 +66,8 @@ const HeaderContainer = styled.div`
 
     @media (min-width: ${desktop}) {
       flex-direction: column;
-      margin-top: -500px;
+      position: absolute;
+      top: 150px;
     }
   }
 
@@ -83,7 +85,7 @@ const HeaderContainer = styled.div`
     height: 100vh;
     padding: 32px 16px;
     margin: 32px;
-    width: 96px;
+    min-width: 96px;
   }
 `;
 

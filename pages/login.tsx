@@ -8,6 +8,12 @@ import { useRouter } from "next/router";
 import { FormEvent } from "react";
 import { tablet, desktop } from "../styles/BreakPoints";
 
+// export async function getStaticProps(context) {
+//   return {
+//     props: {}, // will be passed to the page component as props
+//   };
+// }
+
 export default function Login() {
   const router = useRouter();
 
